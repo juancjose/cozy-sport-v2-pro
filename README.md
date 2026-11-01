@@ -15,3 +15,7 @@ Sitio de marca para **Cozy Sport**, indumentaria de ciclismo hecha en Beccar. Es
 
 ## Placeholders
 Ninguno: todos los datos vienen de `config/store.ts` del sitio actual.
+
+## Performance
+- Fuentes self-hosted (woff2, subset latin) con `preload`: sin dependencias de terceros en el render.
+- Imágenes WebP con `srcset`/`sizes`, `width`/`height` explícitos (CLS ≈ 0) y `fetchpriority` en la imagen principal.
